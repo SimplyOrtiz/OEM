@@ -4,12 +4,12 @@ import os
 DelayTime = 0 
 
 try:
-    user_input = input("Enter delay time between each character\n(0 for no delay, or higher to slow typing)\nDelay : ")
+    user_input = input("Ecolha o delay entre os caracteres\n(0 para nenhum delay)\nDelay : ")
     DelayTime = float(user_input) if user_input else 0
 except ValueError:
-    print("Invalid input. Delay time will be set to 0.")
+    print("Input invalido. Delay foi definido para 0.")
 
-print("Press '1' to start writing the text from 'essaytext.txt'.\n")
+print("Pressione '1' para começar a escrever o texto de 'textoredacao.txt'.\n")
 keyboard.wait("1")
 
 keyboard.send("backspace", True, True)
@@ -25,6 +25,6 @@ if os.path.exists(file_path):
             # Writes the text from the file with the specified delay
             keyboard.write(text, DelayTime)
     except Exception as e:
-        print(f"An error occurred while writing the text: {e}")
+        print(f"Um erro ocorreu durante a ecrita: {e}")
 else:
-    print(f"Error: '{file_path}' not found. Make sure the file exists in the same directory as the script.")
+    print(f"Erro: '{file_path}' não encontrado. Cheque se o arquivo existe no mesmo diretório do script.")

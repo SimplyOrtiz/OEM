@@ -1,35 +1,34 @@
 # Ortiz's Essay Writer (OEM)
 
-### What is it?
-**Ortiz's Essay Writer** (OEM) is a small Python program that automates typing by writing all the text from the `essaytext.txt` file. It is designed to help users automate repetitive typing tasks, especially useful for long-form text entries.
+### O que é?
+**Ortiz's Essay Writer** (OEM) é um pequeno programa em Python que automatiza a digitação, escrevendo todo o texto do arquivo `textoredacao.txt`. Ele foi projetado para ajudar os usuários a automatizar tarefas repetitivas de digitação, sendo especialmente útil para entradas de texto longas.
 
-### How to Install
-To install OEM, you’ll need Python installed on your machine, along with one librarie: `keyboard`. You can install this librarie using pip:
+### Como instalar
+Para instalar o OEM, você precisará do Python instalado em sua máquina, juntamente com uma biblioteca `keyboard`. Você pode instalar essa biblioteca usando o pip:
 
 ```bash
 $ pip install keyboard
 ```
 
-### How to Use
+### Como usar
 
-1. **Prepare the text**: Place the text you want to be automatically typed inside the `essaytext.txt` file.
+1. **Prepare o texto**: Coloque o texto que você deseja digitar automaticamente dentro do arquivo `textoredacao.txt`.
    
-2. **Adjust typing delay (optional)**: If your computer is slow or you want to control the typing speed, you can set a delay between each character. When you run the program, it will prompt you to input a delay time (in seconds). Enter `0` for no delay, or a higher value to slow down typing.
+2. **Ajuste o atraso na digitação (opcional)**: Se o seu computador for lento ou você quiser controlar a velocidade de digitação, é possível definir um atraso entre cada caractere. Ao executar o programa, ele pedirá para você inserir um tempo de atraso (em segundos). Insira `0` para nenhum atraso ou um valor maior para desacelerar a digitação.
 
-3. **Run the program**: Open the command prompt in the directory where `essayWriter.py` is located and run the following command:
+3. **Execute o programa**: Abra o prompt de comando no diretório onde o `essayWriter.py` está localizado e execute o seguinte comando:
 
 ```bash
 $ py essayWriter.py
 ```
 
-4. **Start typing**: Once the script starts, click on the text box where you want the text to be written (e.g., a document or browser text field). Then, press `1` on your keyboard to trigger the typing process.
+4. **Inicie a digitação**: Quando o script começar, clique na caixa de texto onde você deseja que o texto seja digitado (por exemplo, um documento ou campo de texto no navegador). Em seguida, pressione `1` no teclado para acionar o processo de digitação.
 
-### Customization
+### Personalização
 
-- **Change trigger key**: By default, the script starts typing when you press `1`. You can change this trigger key to any other key by modifying the `keyboard.wait("1")` line in the code.
+- **Alterar tecla de ativação**: Por padrão, o script começa a digitar quando você pressiona `1`. Você pode alterar essa tecla de ativação para qualquer outra, modificando a linha `keyboard.wait("1")` no código.
   
-- **Delay Time**: If you experience lag, you can change the `DelayTime` inside the script or when prompted, making the typing process smoother for slower machines.
-
+- **Tempo de atraso**: Se você estiver enfrentando lentidão, pode alterar o `DelayTime` dentro do script ou quando solicitado, tornando o processo de digitação mais suave para máquinas mais lentas.
 
 > [!NOTE]
-> If your computer has lower performance, typing might lag when pressing `1`. You can adjust the delay by entering a higher value when prompted or modifying the `DelayTime` parameter in the code.
+> Se o seu computador tiver desempenho inferior, a digitação pode ter atraso ao pressionar `1`. Você pode ajustar o atraso inserindo um valor maior quando solicitado ou modificando o parâmetro `DelayTime` no código.
